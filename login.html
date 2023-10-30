@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/responsive.css">
+    <title>Login</title>
+</head>
+<body>
+    <header class="cabecera cabecera-login">
+        <a href="/index.html" class="logo">
+            <img src="/assets/img/mcdonalds-logo-footer-bg-white.png" alt="logo welcome" >
+        </a>
+        
+        <nav class="navbar-header">
+            <div class="detalles">
+
+                <div class="contacto">
+                    <a href="#">Contactanos</a>
+                    <a href="/index.html">Inicio</a>
+    
+                </div>
+                <div class="comercio">
+                   
+
+                         <a href="#" class="descargar">
+                            <img src="/assets/img/descarga.png" alt="">
+                        <p> Descaga nuestra app</p></a>
+                    
+                    
+                        <a href="#" class="retira"><img src="/assets/img/pedir.png" alt="" > <p>Te llevamos o retirá</p></a>
+                    
+                </div>
+            </div>
+            <ul class="navbar-list">
+                <li><a href="#">Productos</a></li>
+                <li><a href="#">Locales</a></li>
+                <li><a href="#">Lanzamientos</a></li>
+                <li><a href="#">Login</a></li>
+            </ul>
+        </nav>
+    </header> 
+    <main>
+
+        <div class="login">
+            <form action="procesar_login" method="POST">
+                <label for="usuario">Usuario:</label>
+                <input type="text" id="usuario" name="usuario" required>
+    
+                <label for="contrasena">Contraseña:</label>
+                <input type="password" id="contrasena" name="contrasena" required>
+                <div class="boton">
+                    <button type="submit">Iniciar sesión</button><span>No tenes cuenta?
+                    <a href="/register.html"> Registrate</a>
+                </span>
+                </div>
+    </main>
+</body>
+</html>

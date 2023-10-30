@@ -10,7 +10,11 @@
 :root{
     --principal:#88001b;
 }
-
+/* .contenedor{
+    display: grid;
+    grid-template-rows: 1fr 3fr 1fr;
+    height: 80vh;
+} */
 .cabecera{
     width: 100%;
     
@@ -56,11 +60,15 @@
 .retira p{
     color: #e1e1e1;
 }
+
 .retira:hover{
     cursor: pointer;
 }
 .contacto :first-child{
     color: gray;
+}
+.contacto a:hover{
+    color: #88001b;
 }
 .navbar-list{
     width: 100%;
@@ -79,10 +87,17 @@
     height: 100px;
 }
 .hero{
-   padding-top: 100px;
-   margin-left: 10px;
+   margin-top: 100px;
+  
+    width: 100%;
+    height: 100vh;
+  background-image: url("/assets/img/Banner_Web_GTTB_1440x650_0fd0083902.jpg");
+   background-size: contain;
+   background-repeat: no-repeat;
+    background-attachment:scroll;
 }
 
+.prod,
 .container{
     display: flex;
     flex-direction: column;
@@ -94,13 +109,13 @@
 .bigbang{
     
     display: flex;
-    gap:380px;
+    flex-direction: column;
+    gap:100px;
     justify-content: center;
-    border: 1px solid #e1e1e1;
-    box-shadow: 0 3px 3px 0 rgba(0,0,0,.07);
+    align-items: center;
     border-radius: 6px;
     overflow: hidden;
-    width: 90%;
+    width: 45%;
     padding: 20px 0 20px 0
        
 }
@@ -110,7 +125,7 @@
     
 }
 .card-bigbang{
-    width: 800px;
+    width: fit-content;
     
     display: flex;
     flex-direction: column;
@@ -127,14 +142,14 @@
     box-shadow: 0 3px 3px 0 rgba(0,0,0,.07);
     border-radius: 2%;
     text-align: center;
-    padding-bottom:40px ;
+    /* padding-bottom:40px ; */
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 .video video{
-    width: 310px;
-   margin-bottom: 100px;
+    width: 680px;
+   margin-bottom: 50px;
    border-radius: 2%;
 }
 .video p{
@@ -143,11 +158,116 @@
     width: 180px;
     border-radius: 6px;
     font-weight: bold;
+    color: #ffffff;
 }
 .video p:hover{
     cursor: pointer;
-    color: #e1e1e1;
+    background-color: #610215;
 }
 h1{
     font-size: 80px;
 }
+.menu{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 140px;
+    width: 80%;
+}
+
+
+.comprar{
+    border-radius: 10px;
+    width: 90px;
+    padding-top: 5px;
+    text-align: center;
+    height: 30px;
+   
+    
+    background-color: var(--principal);
+    margin-bottom: 50px;
+    color: #ffffff ;
+
+
+}
+.comprar:hover{
+    cursor: pointer;
+    background-color: #610215;
+}
+
+.ubicacion,
+.contactos,
+.redes{
+    padding: 30px;
+
+}
+
+.contactos,
+.redes
+{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+ 
+    
+}
+
+.icon{
+    width: 25px;
+    margin-right: 20px;
+}
+.footer{
+    background-color:var(--principal);
+    display: flex;
+   
+    justify-content: space-between;
+    padding: 0px 30px;
+}
+footer h4,footer a{
+    color: #ccc;
+}
+.login,
+.register-container{
+    width: 400px;
+    height: 50vh;
+    margin: 0 auto;
+    background-color: #ffffff;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-top: 100px;
+    box-shadow: 0px 0px 10px #888;
+}
+.login a{
+    color:var(--principal)
+}
+label {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+.boton{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.cabecera-login{
+    position: relative;
+}
+button {
+    background-color: var(--principal);
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
