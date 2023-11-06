@@ -169,7 +169,7 @@
         border: 0px 2px 2px solid wheat;
         border-radius: 0px 0px 15px 15px;
         padding: 45px 30px;
-       
+        background-color: #88001b;
         gap: 25px;
         z-index: 2;
     }
